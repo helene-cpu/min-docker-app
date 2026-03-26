@@ -23,27 +23,19 @@ body{
 
 .tabell_index{
     padding-left: 10%;
-    padding-top: 3%;
-    display: flex;           /* legger elementene side ved side */
-    align-items: stretch;    /* gjør dem like høye */
-    gap: 20px;  
+    padding-top: 3%;   
 }
 
 .tabell_index table{
-    flex: 1; /* gjør tabellen bredere */
+    flex: 0; /* gjør tabellen bredere */
 }
 
 .tekst_index{
     text-align: center;
+    color: rgb(255, 0, 0);
 }
 
-.binary {
-    display: flex;
-}
 
-.binary img{
-    height: auto;
-    width: 30%;
-    object-fit: cover; 
-    justify-content: space-between;
+.button{
+    background-color: rgb(255, 0, 0);
 }
