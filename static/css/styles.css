@@ -39,3 +39,16 @@ body{
 .button{
     background-color: rgb(255, 0, 0);
 }
+
+.note_read{
+    padding: 2%;
+}
+
+.note_read p{
+    font-size: 2rem;
+}
+
+.note_read img{
+    width: 30%;
+    height: auto;
+}
