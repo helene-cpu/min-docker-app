@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: rgb(20, 191, 20);
+}
+
+.tittel_index{
+    text-align: center;
+       animation: blinkMe 2s linear infinite;
+}
+
+/* Define the animation sequence */
+@keyframes blinkMe {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
