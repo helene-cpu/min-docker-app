@@ -1,1 +1,4 @@
 flask
+WTForms
+Flask-WTF
+mysql-connector-python
