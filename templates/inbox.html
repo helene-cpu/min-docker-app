@@ -1,0 +1,120 @@
+{% extends "base_virus.html" %}
+{% block content %}
+
+<div class="innboks-app">
+
+  <div class="innboks-sidebar">
+    <div class="innboks-sidebar-header">
+      <h2>NordTech AS</h2>
+      <p>it-support@nordtech.no</p>
+    </div>
+    <div class="folder active">
+      <i class="ti ti-inbox"></i> Innboks
+      <span class="badge">3</span>
+    </div>
+    <div class="folder"><i class="ti ti-send"></i> Sendt</div>
+    <div class="folder"><i class="ti ti-file"></i> Utkast</div>
+    <div class="folder"><i class="ti ti-trash"></i> Papirkurv</div>
+    <div class="folder"><i class="ti ti-alert-triangle"></i> Søppelpost</div>
+  </div>
+
+  <div class="innboks-mail-list">
+    <div class="mail-item unread active">
+      <span class="unread-dot"></span>
+      <span class="mail-time">03:47</span>
+      <div class="mail-sender">system-alert@nordtech.no</div>
+      <div class="mail-subject">⚠ Uvanlig innlogging detektert</div>
+    </div>
+    <div class="mail-item unread">
+      <span class="unread-dot"></span>
+      <span class="mail-time">02:11</span>
+      <div class="mail-sender">backup@nordtech.no</div>
+      <div class="mail-subject">Nattlig backup fullført</div>
+    </div>
+    <div class="mail-item unread">
+      <span class="unread-dot"></span>
+      <span class="mail-time">Igår</span>
+      <div class="mail-sender">hr@nordtech.no</div>
+      <div class="mail-subject">Påminnelse: Møte fredag</div>
+    </div>
+    <div class="mail-item">
+      <span class="mail-time">Man</span>
+      <div class="mail-sender">lena.dahl@nordtech.no</div>
+      <div class="mail-subject">Re: Kampanjeplan Q4</div>
+    </div>
+    <div class="mail-item">
+      <span class="mail-time">Søn</span>
+      <div class="mail-sender">erik.solberg@nordtech.no</div>
+      <div class="mail-subject">Budsjettrapport mars</div>
+    </div>
+  </div>
+
+  <div class="innboks-mail-view">
+    <div class="mail-view-header">
+      <h3>⚠ Uvanlig innlogging detektert</h3>
+      <div class="meta">
+        <span>Fra: system-alert@nordtech.no</span>
+        <span>Til: it-support@nordtech.no</span>
+        <span>03:47 — i natt</span>
+      </div>
+    </div>
+
+    <div class="mail-body">
+      <p>Følgende ansatte logget inn mellom 03:00–04:00 i natt:</p>
+      <table>
+        <tr>
+          <th>Navn</th>
+          <th>Innlogging</th>
+          <th>Avdeling</th>
+        </tr>
+        <tr>
+          <td>Erik Solberg</td>
+          <td>03:12</td>
+          <td>Økonomi</td>
+        </tr>
+        <tr class="highlight">
+          <td>Maria Hansen</td>
+          <td>03:44</td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>Jonas Bakke</td>
+          <td>03:31</td>
+          <td>HR</td>
+        </tr>
+        <tr>
+          <td>Lena Dahl</td>
+          <td>03:09</td>
+          <td>Marked</td>
+        </tr>
+      </table>
+      <p class="system-note">— Automatisk systemvarsel, NordTech Security</p>
+    </div>
+
+    <div class="svar-seksjon">
+      <p class="svar-label">Svar til: system-alert@nordtech.no</p>
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.svar }}
+        {{form.submit}}
+      </form>
+
+      {% if riktig %}
+    <button popovertarget="my-popover">Ny melding av NordTech Security</button>
+    <div id="my-popover" popover>
+        <p>Til: it-support@nordtech.no</p>
+        <p>Emne: Maria Hansen</p>
+        <p>Fra: system-alert@nordtech.no</p>
+        <p>Hei, jeg har også hatt en liten følelse på at Maria 
+    har drevet med noe ondsinnet, men jeg har aldri klart 
+    å ta hun i action. Hvis du vil kan vi samarbeide om å 
+    ta hun. Sjekk ansattlisten.
+        <br>Mvh NordTech Security</p>
+    </div>
+    {% endif %}
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
