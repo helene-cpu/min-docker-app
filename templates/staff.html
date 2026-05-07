@@ -1,0 +1,57 @@
+{% extends "base_virus.html" %}
+
+{% block content %}
+<button popovertarget="popup-erik">
+    <img src="/static/img/Erik.png" alt="Headshot av erik">
+</button>
+<div id="popup-erik" popover>
+    <img src="/static/img/Erik.png">
+    <h2>Erik Solberg</h2>
+    <p>Stilling: Økonomisjef</p>
+    <p>M>askin: SRV-ES-01</p>
+</div>
+
+<button popovertarget="popup-maria">
+    <img src="/static/img/Maria.png" alt="headshot av maria">
+</button>
+<div id="popup-maria" popover>
+    <img src="/static/img/Maria.png">
+    <h2>Maria Hansen</h2>
+    <p>Stilling: IT-konsulent</p>
+    <p>Maskin: SRV-MH-04</p>
+    <div class="ekstra_tekst">
+        <p>⚠ Denne brukeren har hatt<br> 3 mislykkede 
+        innloggingsforsøk<br> siste uke.</p>
+    </div>
+</div>
+
+<button popovertarget="popup-jonas">
+    <img src="/static/img/Jonas.png" alt="Headshot av jonas">
+</button>
+<div id="popup-jonas" popover>
+    <img src="/static/img/Jonas.png" alt="headshot av Jonas">
+    <h2>Jonas Bakke</h2>
+    <p>Stilling: HR- leder</p>
+    <p>Maskin: SRV-JB-02</p>
+</div>
+
+<button popovertarget="popup-lena">
+    <img src="/static/img/Lena.png" alt="headshot av lena">
+</button>
+<div id="popup-lena" popover>
+    <img src="/static/img/Lena.png" alt="headshot av Lena">
+    <h2>Lena Dahl</h2>
+    <p>Stilling: Markedssjef</p>
+    <p>Maskin: SRV-LD-03</p>
+</div>
+
+<button popovertarget="popup-thor">
+    <img src="/static/img/Thor.png" alt="headshot av thor">
+</button>
+<div id="popup-thor" popover>
+    <img src="/static/img/Thor.png" alt="headshot av thor">
+    <h2>Thor Myhre</h2>
+    <p>Stilling: Vaktmester</p>
+    <p>Maskin: --</p>
+</div>
+{% endblock %}
