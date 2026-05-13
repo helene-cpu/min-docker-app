@@ -38,6 +38,10 @@ def get_current_time(timezone="Europe/Oslo"):
 def home():
     return render_template('index.html')
 
+@app.route("/faq")
+def faq():
+    return render_template("faq.html")
+
 @app.route("/start")
 def start():
     return render_template("start.html")
